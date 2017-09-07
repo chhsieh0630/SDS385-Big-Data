@@ -15,7 +15,6 @@ inv_func <- function(X,y){
   return (beta_h)
 }
 
- 
 
 ####### LU decomposition (A=LU)
 # AX=b
@@ -33,7 +32,6 @@ LU_decomposition <- function(X,y) {
 }
 
 
-
 ####### cholesky decomposition (A=LLt)
 # AX=b
 
@@ -49,11 +47,8 @@ cholesky_decomposition <- function(X,y) {
 }
 
 
-
 ####### QR decomposition (A=QR)
 # AX=b
-
-
 
 QR_decomposition <- function(X,y) {
 
@@ -69,10 +64,8 @@ QR_decomposition <- function(X,y) {
 }
 
 
-
 nn <- c(50,100,500,1000)                   # Test n=50/100/500/1000
 result <- list()
-
 
 for(i in 1:4){
   n=nn[i]
@@ -94,7 +87,6 @@ for(i in 1:4){
 }
 names(result) <- c("n=50,p=10", "n=100,p=20", "n=500,p=100", "n=1000,p=200")
 result
-
 
 
 #########################  Linear regression part D - Sparsity ##############################
