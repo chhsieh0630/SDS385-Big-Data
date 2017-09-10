@@ -129,7 +129,7 @@ result
 cholesky_sparse <- function(X, y){ 
   
   X <- Matrix(X, sparse = TRUE)
-  A = crossprod(X)
+  A = t(X) %*% X
   b = t(X) %*% y
   L <- chol(A)
   Lt <- t(L)
