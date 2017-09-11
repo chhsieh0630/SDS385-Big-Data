@@ -1,8 +1,6 @@
 # Excercise 1
 
-#library (Matrix)
 library (microbenchmark)
-
 
 ################ Linear regression part C - Inversion method and your method #################
 
