@@ -9,7 +9,7 @@ library (microbenchmark)
 
 inv_func <- function(X,y){
   X <- Matrix(X, sparse = FALSE)
-  beta_h <- solve(t(X) %*% X) %*% t(X) %*% y     #beta = Xt * X * Xt * y
+  beta_h <- solve(t(X) %*% X) %*% t(X) %*% y     #beta = Xt W X * Xt W y
   return (beta_h)
 }
  
