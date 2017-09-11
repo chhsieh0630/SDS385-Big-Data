@@ -1,6 +1,5 @@
 # Excercise 1
 
-library (Matrix)
 library (microbenchmark)
 
 
